@@ -1,12 +1,15 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
+import { ThemeProvider } from "styled-components/native";
 import RoutesManager from "./src/routes/app.routes";
+import { GlobalStyles } from "./src/styles/styles";
 
 export default function App() {
   return (
     <>
-      <RoutesManager />
-      <StatusBar style="auto" translucent />
+      <ThemeProvider theme={GlobalStyles}>
+        <StatusBar style="auto" translucent />
+        <RoutesManager />
+      </ThemeProvider>
     </>
   );
 }
