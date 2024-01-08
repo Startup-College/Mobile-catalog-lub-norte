@@ -1,7 +1,7 @@
 import { ActivityIndicator, StyleSheet, View } from "react-native";
 import React from "react";
 import Logo from "../assets/logo_branco.svg";
-import { GlobalStyles } from "../styles";
+import { GlobalStyles } from "../styles/styles";
 
 const Loading = () => {
   return (

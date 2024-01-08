@@ -4,7 +4,7 @@ import AuthRoutes from "./AuthRoutes";
 import AppRoutes from "./AppRoutes";
 
 const RoutesManager = () => {
-  const auth = false;
+  const auth = true;
   return (
     <NavigationContainer>
       {auth ? <AppRoutes /> : <AuthRoutes />}
