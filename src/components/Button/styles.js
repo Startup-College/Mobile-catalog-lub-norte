@@ -6,10 +6,3 @@ export const Container = styled.TouchableOpacity`
   padding: 12px 14px;
   border-radius: 999px;
 `;
-
-export const Children = styled.Text`
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-`;

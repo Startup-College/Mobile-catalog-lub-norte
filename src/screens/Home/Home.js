@@ -1,7 +1,8 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import React from "react";
 import { Container } from "./styles";
 import Button from "../../components/Button/Button";
+import Text from "../../components/Text/Text";
 
 const Home = ({ navigation }) => {
   function handlePress() {
@@ -9,7 +10,9 @@ const Home = ({ navigation }) => {
   }
   return (
     <Container>
-      <Text>Home</Text>
+      <Text size="LG" weight="BOLD">
+        Home
+      </Text>
       <View style={{ width: "50%" }}>
         <Button variant="PRIMARY" title="Settings" onPress={handlePress} />
       </View>

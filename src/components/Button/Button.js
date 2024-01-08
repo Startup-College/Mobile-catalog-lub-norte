@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Children } from "./styles";
+import { Container } from "./styles";
 import { GlobalStyles } from "../../styles/styles";
+import Text from "../Text/Text";
 
 const Button = (props) => {
   function handleWithBackgroundColor(variant) {
@@ -20,7 +21,9 @@ const Button = (props) => {
       color={handleWithBackgroundColor(props.variant)}
       onPress={props.onPress}
     >
-      <Children>{props.title}</Children>
+      <Text color="WHITE" weight="BOLD" size="LG" align="CENTER" uppercase>
+        {props.title}
+      </Text>
     </Container>
   );
 };
