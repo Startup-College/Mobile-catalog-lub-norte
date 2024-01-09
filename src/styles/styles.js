@@ -37,6 +37,7 @@ export const GlobalStyles = {
       500: "#fb3035",
     },
   },
+
   fontSize: {
     xs: 10,
     sm: 14,
@@ -45,5 +46,16 @@ export const GlobalStyles = {
     xl: 24,
     "2xl": 32,
     "3xl": 48,
+  },
+
+  spacing: {
+    xs: "1px",
+    sm: "2px",
+    md: "4px",
+    lg: "8px",
+    xl: "12px",
+    "2xl": "16px",
+    "3xl": "24px",
+    "4xl": "28px",
   },
 };
