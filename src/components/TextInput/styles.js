@@ -6,7 +6,7 @@ export const Container = styled.TextInput.attrs({
 })`
   background-color: ${GlobalStyles.colors.gray[200]};
   border-radius: 999px;
-  width: "100%";
+  width: 100%;
   padding: ${GlobalStyles.spacing.xl} ${GlobalStyles.spacing["4xl"]};
   margin-left: ${GlobalStyles.spacing["4xl"]};
   margin-right: ${GlobalStyles.spacing["4xl"]};

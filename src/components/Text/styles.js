@@ -58,7 +58,7 @@ function handleSize(size) {
       return `${GlobalStyles.fontSize.xl}px`;
     case "2XL":
       return `${GlobalStyles.fontSize["2xl"]}px`;
-    case "3L":
+    case "3XL":
       return `${GlobalStyles.fontSize["3xl"]}px`;
     default:
       return `${GlobalStyles.fontSize.md}px`;
