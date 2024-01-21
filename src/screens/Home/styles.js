@@ -22,6 +22,6 @@ export const InputWrapper = styled.View`
 `;
 
 export const Segments = styled.View`
-  margin-top: ${GlobalStyles.spacing["4xl"]};
+  margin-top: ${() => `${GlobalStyles.spacing["4xl"]}px`};
   gap: ${GlobalStyles.spacing["2xl"]};
 `;
