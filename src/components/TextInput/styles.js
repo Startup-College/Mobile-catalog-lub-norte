@@ -8,8 +8,8 @@ export const Container = styled.TextInput.attrs({
   border-radius: 999px;
   width: 100%;
   padding: ${GlobalStyles.spacing.xl} ${GlobalStyles.spacing["4xl"]};
-  margin-left: ${GlobalStyles.spacing["4xl"]};
-  margin-right: ${GlobalStyles.spacing["4xl"]};
+  /* margin-left: ${GlobalStyles.spacing["4xl"]};
+  margin-right: ${GlobalStyles.spacing["4xl"]}; */
   color: ${GlobalStyles.colors.primary[700]};
   font-size: ${GlobalStyles.fontSize.md};
   text-decoration: none;
