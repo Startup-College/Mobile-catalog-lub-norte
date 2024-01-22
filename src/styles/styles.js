@@ -39,13 +39,13 @@ export const GlobalStyles = {
   },
 
   fontSize: {
-    xs: 10,
-    sm: 14,
-    md: 16,
-    lg: 18,
-    xl: 24,
-    "2xl": 32,
-    "3xl": 48,
+    xs: "10px",
+    sm: "14px",
+    md: "16px",
+    lg: "18px",
+    xl: "24px",
+    "2xl": "32px",
+    "3xl": "48px",
   },
 
   spacing: {

@@ -5,6 +5,8 @@ function handleColor(color) {
   switch (color) {
     case "WHITE":
       return GlobalStyles.colors.gray[100];
+    case "BLACK":
+      return GlobalStyles.colors.gray[900];
     case "PRIMARY":
       return GlobalStyles.colors.primary[500];
     case "SECONDARY":
@@ -47,21 +49,21 @@ function handleAlign(align) {
 function handleSize(size) {
   switch (size) {
     case "XS":
-      return `${GlobalStyles.fontSize.xs}px`;
+      return GlobalStyles.fontSize.xs;
     case "SM":
-      return `${GlobalStyles.fontSize.sm}px`;
+      return GlobalStyles.fontSize.sm;
     case "MD":
-      return `${GlobalStyles.fontSize.md}px`;
+      return GlobalStyles.fontSize.md;
     case "LG":
-      return `${GlobalStyles.fontSize.lg}px`;
+      return GlobalStyles.fontSize.lg;
     case "XL":
-      return `${GlobalStyles.fontSize.xl}px`;
+      return GlobalStyles.fontSize.xl;
     case "2XL":
-      return `${GlobalStyles.fontSize["2xl"]}px`;
+      return GlobalStyles.fontSize["2xl"];
     case "3XL":
-      return `${GlobalStyles.fontSize["3xl"]}px`;
+      return GlobalStyles.fontSize["3xl"];
     default:
-      return `${GlobalStyles.fontSize.md}px`;
+      return GlobalStyles.fontSize.md;
   }
 }
 

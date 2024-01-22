@@ -6,7 +6,16 @@ import { Container, Content, Welcome, InputWrapper, Segments } from "./styles";
 import { FlatList } from "react-native";
 import SegmentItem from "../../components/SegmentItem";
 
-const data = ["moto", "moto", "carro", "caminhao"];
+const data = [
+  "moto",
+  "carro",
+  "caminhao",
+  "agricola",
+  "industria",
+  "engrenagens",
+  "complementar",
+  "teste",
+];
 
 const Home = () => {
   return (
@@ -31,9 +40,13 @@ const Home = () => {
 
           <FlatList
             data={data}
-            renderItem={(item) => <SegmentItem name={item.item} />}
+            renderItem={(item) => (
+              <SegmentItem index={item.index} name={item.item} />
+            )}
             keyExtractor={({ item }) => `${Math.random(0, 1000)}-${item}`}
             horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{ paddingRight: 36 }}
           />
         </Segments>
       </Content>

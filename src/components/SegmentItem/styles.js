@@ -1,19 +1,11 @@
 import styled from "styled-components/native";
 import { GlobalStyles } from "../../styles/styles";
 
-function handleBackgroundColor(name) {
-  switch (name) {
-    case "moto":
-      return GlobalStyles.colors.primary[500];
-    case "carro":
-      return GlobalStyles.colors.secondary[500];
-    default:
-      return GlobalStyles.colors.gray[500];
-  }
-}
-
-export const Container = styled.View`
-  background-color: ${(props) => handleBackgroundColor(props.name)};
+export const Container = styled.TouchableOpacity`
+  background-color: ${(props) =>
+    props.index % 2 === 0
+      ? GlobalStyles.colors.primary[500]
+      : GlobalStyles.colors.secondary[500]};
   height: 256px;
   width: 256px;
   border-radius: ${GlobalStyles.spacing["xl"]};
