@@ -1,12 +1,17 @@
 import styled from "styled-components/native";
 import { GlobalStyles } from "../../styles/styles";
 
+
 export const Container = styled.View`
   width: 100%;
-  flex: 1;
-  background-color: ${GlobalStyles.colors.primary[100]};
+  padding: 0px ${GlobalStyles.spacing["md"]};
+  
 `;
 
 export const NameProduct = styled.View`
-  background-color: ${GlobalStyles.colors.primary[200]};
+  margin-top: ${GlobalStyles.spacing["lg"]};
+`;
+
+export const Details = styled.View`
+  margin-top: ${GlobalStyles.spacing["2xl"]};
 `;

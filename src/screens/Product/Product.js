@@ -1,25 +1,24 @@
 import React from "react";
-import Header from "../../components/Header";
+import HeaderButton from "../../components/HeaderButton"
 import Products from "../../components/Products";
-
-import { Container } from "./styles";
 import Description from "../../components/Description";
-import { View } from "react-native";
+import Equivalence from "../../components/Equivalence";
+import { Container } from "./styles";
+
+
 
 
 const Product = () => {
     return(
         <Container>
-            <Header/>
-
-            <View>
-
+            <HeaderButton
+            />
+        
             <Products />
 
             <Description />
-                
-            </View>
-
+            
+            <Equivalence />
         </Container>
     );
 };

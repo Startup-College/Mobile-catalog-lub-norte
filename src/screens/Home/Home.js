@@ -49,6 +49,7 @@ const Home = () => {
             contentContainerStyle={{ paddingRight: 36 }}
           />
         </Segments>
+        
       </Content>
       {/* fim do content */}
     </Container>
