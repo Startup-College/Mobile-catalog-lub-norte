@@ -1,26 +1,22 @@
 import React from "react";
-import HeaderButton from "../../components/HeaderButton"
+import Header from "../../components/Header";
 import Products from "../../components/Products";
 import Description from "../../components/Description";
 import Equivalence from "../../components/Equivalence";
 import { Container } from "./styles";
 
-
-
-
 const Product = () => {
-    return(
-        <Container>
-            <HeaderButton
-            />
-        
-            <Products />
+  return (
+    <Container>
+      <Header logo leftIcon />
 
-            <Description />
-            
-            <Equivalence />
-        </Container>
-    );
+      <Products />
+
+      <Description />
+
+      <Equivalence />
+    </Container>
+  );
 };
 
 export default Product;

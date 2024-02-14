@@ -20,7 +20,7 @@ const data = [
 const Home = () => {
   return (
     <Container>
-      <Header />
+      <Header logo />
       {/* content */}
       <Content>
         <Welcome>
@@ -49,7 +49,6 @@ const Home = () => {
             contentContainerStyle={{ paddingRight: 36 }}
           />
         </Segments>
-        
       </Content>
       {/* fim do content */}
     </Container>
