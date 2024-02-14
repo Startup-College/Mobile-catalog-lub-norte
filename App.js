@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
       <ThemeProvider theme={GlobalStyles}>
-        <StatusBar style="light" translucent />
+        <StatusBar style="light" backgroundColor="transparent" translucent />
         <RoutesManager />
       </ThemeProvider>
     </>

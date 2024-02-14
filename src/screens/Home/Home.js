@@ -20,7 +20,7 @@ const data = [
 const Home = () => {
   return (
     <Container>
-      <Header />
+      <Header logo />
       {/* content */}
       <Content>
         <Welcome>
